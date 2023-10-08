@@ -13,6 +13,10 @@ a {
     color: inherit;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Fraunces', sans-serif;
+}
+
 body {
     font-size: 18px;
     font-family: 'Barlow', sans-serif;
@@ -67,7 +71,6 @@ header {
 
 .title {
     text-align: center;
-    font-family: 'Fraunces', sans-serif;
     text-transform: uppercase;
     color: #fff;
     margin-top: 10rem;
@@ -89,4 +92,111 @@ header {
     background-position: center;
     background-size: contain;
     cursor: pointer;
+}
+
+article {
+    display: flex;
+}
+
+div.articleInfo {
+    width: 50%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.articleInfo .container {
+    height: 40%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.articleInfo .container h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+}
+
+div.articleInfo .container p {
+    opacity: 0.5;
+}
+
+div.articleInfo .container a {
+    text-transform: uppercase;
+    font-family: 'Fraunces', sans-serif;
+    width: 30%;
+}
+
+div.articleInfo .container a#transformLink {
+    border-bottom: 3px solid hsl(51, 100%, 49%);
+}
+
+div.articleInfo .container a#standOutLink {
+    border-bottom: 3px solid hsl(7, 99%, 70%);
+}
+
+div.articleImage {
+    width: 50%;
+}
+
+div.articleImage {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 25rem;
+}
+
+div.articleImage#transform {
+    background-image: url('./images/desktop/image-transform.jpg');
+}
+
+div.articleImage#standOut {
+    background-image: url('./images/desktop/image-stand-out.jpg');
+}
+
+.lastArticle {
+    width: 50%;
+    position: relative;
+}
+
+.lastArticle:first-child {
+    background-image: url('./images/desktop/image-graphic-design.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 25rem;
+    color: hsl(167, 40%, 24%);
+}
+
+.lastArticle h3 {
+    text-transform:capitalize;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.lastArticle p {
+    padding: 0 17rem;
+    line-height: 26px;
+    opacity: 0.7;
+}
+
+.lastArticle:last-child {
+    background-image: url('./images/desktop/image-photography.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 25rem;
+    color: hsl(198, 62%, 26%);
+}
+
+.lastArticle .container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 4.5rem;
+    text-align: center;
 }
